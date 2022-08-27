@@ -9,7 +9,7 @@ export default {
     path: path.join(__dirname, "/migrations"),
     glob: '!(*.d).{js,ts}'
   },
-  allowGlobalContext: true,
+  // allowGlobalContext: true,
   entities: [Post],
   dbName: 'postgres',
   user: 'postgres',
