@@ -1,5 +1,6 @@
 import { __prod__ } from "./constants";
 import { Post } from "./entities/Post";
+import { User } from "./entities/User";
 import { MikroORM } from "@mikro-orm/core"
 import path from 'path';
 
@@ -10,7 +11,7 @@ export default {
     glob: '!(*.d).{js,ts}'
   },
   // allowGlobalContext: true,
-  entities: [Post],
+  entities: [Post, User],
   dbName: 'postgres',
   user: 'postgres',
   password: 'Don\'t @ me ok?',
